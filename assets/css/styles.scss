@@ -2,13 +2,7 @@ body{
     align-self: center;
     background-color: lightgrey;
 }
-.title{
-    margin: 0;
-    display: inline block;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-}
+
 .images{
     border: white solid 3px;
     background-color: #f4f4f4;
@@ -39,8 +33,9 @@ body{
     border: white solid 3px;
     border-radius: 6px;
     background-color: #f4f4f4;
-    padding: 30px;
+    padding: 12px;
     align-content: center;
+    opacity: 1;
   
     
 }
@@ -52,4 +47,15 @@ body{
 }
 .input{
     border-radius: 9px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 576px) {
+    #increased{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+
 }

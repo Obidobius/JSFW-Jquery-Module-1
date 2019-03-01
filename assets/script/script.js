@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('.images').click(function(){
     });
-
 $(document).on('click','.mediaDisplay',function(){
         //The element you have selected
     var active = $(this)
@@ -9,18 +8,28 @@ $(document).on('click','.mediaDisplay',function(){
         //Changed the size of the element you select once its into the display div
     $('#increased').css({  
             width: '100%',
-            heigh: 'auto' ,
-        });
-        //Removed the element in the display div
-    $('#increased').empty({
+            heigh: 'auto',
+            opacity:'1',
+        });   
+        //Finds the ID in the div you want to fade out. You add a function with what functions you want to be triggered after
+            $('#increased').find('.input').fadeOut(
+                800,
+                function(){
+                    //Create the new image you have selected to be displayed in the div
+                    let newImg =  $('<img class="col-sm-7 mediaDisplay input" src="'+ active.prop('src') + '" alt="">')
+                    $(newImg).css({
+                        display: 'none',
+                       
+                    })
+                    //Empty the current div to display new images
+                    $('#increased').empty({
+                    });
+                    //Takes the new image into the div
+                    $('#increased').append(newImg);
+                    $(newImg).fadeIn(800);    
+                }
+            );
     });
-        //Appends the image you selected into the display div
-    $('#increased').append(
-        '<img col-sm-7 mediaDisplay input" src="'+ active.prop('src') + '" alt="">');
 });
 
 
-
-
-
-});

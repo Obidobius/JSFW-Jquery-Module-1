@@ -5,19 +5,6 @@ body {
   background-color: lightgrey;
 }
 
-.title {
-  margin: 0;
-  display: inline block;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .images {
   border: white solid 3px;
   background-color: #f4f4f4;
@@ -52,9 +39,10 @@ body {
   border: white solid 3px;
   border-radius: 6px;
   background-color: #f4f4f4;
-  padding: 30px;
+  padding: 12px;
   -ms-flex-line-pack: center;
       align-content: center;
+  opacity: 1;
 }
 
 #placeholder {
@@ -66,5 +54,15 @@ body {
 
 .input {
   border-radius: 9px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  #increased {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
