@@ -2,7 +2,6 @@ body{
     align-self: center;
     background-color: lightgrey;
 }
-
 .images{
     border: white solid 3px;
     background-color: #f4f4f4;
@@ -13,21 +12,24 @@ body{
 }
 .container{
     align-content: center;
-
 }
 .row{
     padding: 20px;
     margin: auto;
     align-content: center;
     display: inline block;
-    
 }
 .mediaDisplay{
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 70px;
     width: 80%;
     height: auto;
-    padding-top: 5;
+    padding-top: 5; 
+}
+.mediaDisplay:hover{
+    opacity: 0.3;
+    transition-delay: 0.1s;
 }
 #increased{
     border: white solid 3px;
@@ -36,8 +38,6 @@ body{
     padding: 12px;
     align-content: center;
     opacity: 1;
-  
-    
 }
 #placeholder{
     border-radius: 9px;
@@ -50,12 +50,10 @@ body{
     margin: 0;
     padding: 0;
 }
-
 @media (min-width: 576px) {
     #increased{
         width: 100%;
         height: auto;
         padding: 0px;
     }
-
 }
