@@ -38,8 +38,8 @@ body {
 
 .mediaDisplay:hover {
   opacity: 0.3;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
 }
 
 #increased {
@@ -72,4 +72,4 @@ body {
     padding: 0px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=gallery.css.map */
